@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | GameZone</title>
+  <link rel="stylesheet" href="./assets/css/login.css" />
+</head>
+<body>
+  <main class="login-container">
+    <div class="login-card">
+      <h2 class="login-title">Create your GameZone Account</h2>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" id="username" class="form-input" placeholder="Choose a username" required />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-input" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-input" placeholder="Create a password" minlength="6" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password" class="form-label">Confirm Password</label>
+          <input type="password" id="confirm-password" class="form-input" placeholder="Re-enter password" minlength="6" required />
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="show-password" class="form-check-input" />
+          <label for="show-password" class="form-check-label">Show Password</label>
+        </div>
+        <div id="error-message" class="error-message"></div>
+        <button type="submit" class="login-button" onclick="window.location.href = 'index.html'">Sign Up</button>
+      </form>
+      <div class="login-links">
+        <p class="text-muted">Already have an account? <a href="login.html" class="link-accent">Login</a></p>
+      </div>
+    </div>
+  </main>
+
+  
+  
+</body>
+</html>

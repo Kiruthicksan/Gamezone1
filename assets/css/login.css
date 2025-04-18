@@ -1,0 +1,181 @@
+:root {
+    --bg-dark: #121212;
+    --primary-accent: #ff6b6b;
+    --neutral-mid: #adb5bd;
+    --card-bg: #212121;
+}
+
+/* General */
+body {
+    background: var(--bg-dark);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* Card */
+.login-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    padding: 3rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Title */
+.login-title {
+    color: var(--primary-accent);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    color: var(--primary-accent);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-input {
+    background: #1a1a1a;
+    border: 2px solid var(--neutral-mid);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--primary-accent);
+    outline: none;
+}
+
+/* Checkbox */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background: var(--card-bg);
+    border: 2px solid var(--neutral-mid);
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background: var(--primary-accent);
+    border-color: var(--primary-accent);
+}
+
+.form-check-label {
+    color: var(--neutral-mid);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Error */
+.error-message {
+    color: #dc3545;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    min-height: 1.2rem;
+}
+
+/* Button */
+.login-button {
+    background: var(--primary-accent);
+    border: none;
+    border-radius: 10px;
+    color: var(--bg-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 14px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background: #ff8787;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    transform: scale(1.03);
+}
+
+/* Links */
+.login-links {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.link-muted {
+    color: var(--neutral-mid);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.link-muted:hover {
+    color: #e55a5a;
+}
+
+.link-accent {
+    color: var(--primary-accent);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-accent:hover {
+    color: #e55a5a;
+}
+
+.text-muted {
+    color: var(--neutral-mid);
+    font-size: 1rem;
+    margin-top: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .login-card {
+        padding: 2rem;
+        max-width: 90%;
+    }
+    .login-title {
+        font-size: 2rem;
+    }
+    .form-label,
+    .form-check-label,
+    .form-input,
+    .login-button {
+        font-size: 1rem;
+    }
+}

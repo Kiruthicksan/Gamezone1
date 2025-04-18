@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Login</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    
+</head>
+<body>
+    <main class="login-container">
+        <div class="login-card">
+            <h2 class="login-title">Login to GameZone</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="Enter your password" minlength="6" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="show-password" class="form-check-input">
+                    <label for="show-password" class="form-check-label">Show Password</label>
+                </div>
+                <div id="error-message" class="error-message"></div>
+                <button type="submit" class="login-button" onclick="window.location.href = 'index.html'">Login</button>
+            </form>
+            <div class="login-links">
+                <a href="#" class="link-muted">Forgot Password?</a>
+                <p class="text-muted">Don't have an account? <a href="signup.html" class="link-accent">Sign Up</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>

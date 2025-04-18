@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body class="bg-dark-custom text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top px-4">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fw-bold text-accent ">GameZone</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="#" class="nav-link">Games</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cart <span class="badge bg-danger">0</span></a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="search-bar position-relative">
+                        <i class="fa fa-search position-absolute ms-1 text-secondary"></i>
+                        <input type="search" class="form-control ps-5 bg-dark text-white border-0" placeholder="Search Games">
+                    </div>
+                    <button class="btn btn-neon" onclick="window.location.href = 'login.html'">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <img src="./assets/images/games/Assassins-Creed-Shadows.jpg" alt="Assassin's Creed Shadows" class="img img-fluid">
+            <div class="hero-text">
+                <p class="status">Available Now</p>
+                <p class="desc">Experience an epic action-adventure story set in feudal Japan! Become a lethal shinobi assassin and powerful legendary samurai as you explore a beautiful open world in a time of chaos.</p>
+                <p class="price">₹ 4899</p>
+                <button class="buy">Buy Now</button>
+                <button class="wishlist">Add to Wishlist</button>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="feature-section">
+            <h2 class="section-title">Featured Games</h2>
+            <div class="scroll-container">
+                <div class="game-card">
+                    <img src="./assets/images/games/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077">
+                    <div class="feature-info">
+                        <h5>Cyberpunk 2077</h5>
+                        <p class="price">₹2999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="./assets/images/games/gow.jpg" alt="God of War: Ragnarök">
+                    <div class="feature-info">
+                        <h5>God of War: Ragnarök</h5>
+                        <p class="price">₹4,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="./assets/images/games/lastofus.jpg" alt="The Last of Us Part II">
+                    <div class="feature-info">
+                        <h5>The Last of Us Part II</h5>
+                        <p class="price">₹4,299</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="./assets/images/games/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2">
+                    <div class="feature-info">
+                        <h5>Red Dead Redemption 2</h5>
+                        <p class="price">₹4,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Ghost+of+Tsushima" alt="Ghost of Tsushima">
+                    <div class="feature-info">
+                        <h5>Ghost of Tsushima</h5>
+                        <p class="price">₹4,899</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=SpiderMan+2" alt="Spider-Man 2">
+                    <div class="feature-info">
+                        <h5>Spider-Man 2</h5>
+                        <p class="price">₹3,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Detroit+Become+Human" alt="Detroit: Become Human">
+                    <div class="feature-info">
+                        <h5>Detroit: Become Human</h5>
+                        <p class="price">₹3,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Beyond+Two+Souls" alt="Beyond: Two Souls">
+                    <div class="feature-info">
+                        <h5>Beyond: Two Souls</h5>
+                        <p class="price">₹3,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Resident+Evil+4" alt="Resident Evil 4">
+                    <div class="feature-info">
+                        <h5>Resident Evil 4</h5>
+                        <p class="price">₹3,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Black+Myth+Wukong" alt="Black Myth: Wukong">
+                    <div class="feature-info">
+                        <h5>Black Myth: Wukong</h5>
+                        <p class="price">₹3,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Games Section -->
+        <section class="feature-section section-2">
+            <h2 class="section-title">Latest Games</h2>
+            <div class="scroll-container">
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Grand+Theft+Auto+VI" alt="Grand Theft Auto VI">
+                    <div class="feature-info">
+                        <h5>Grand Theft Auto VI</h5>
+                        <p class="price">₹5,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Metroid+Prime+4+Beyond" alt="Metroid Prime 4: Beyond">
+                    <div class="feature-info">
+                        <h5>Metroid Prime 4: Beyond</h5>
+                        <p class="price">₹4,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Monster+Hunter+Wilds" alt="Monster Hunter Wilds">
+                    <div class="feature-info">
+                        <h5>Monster Hunter Wilds</h5>
+                        <p class="price">₹5,499</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Assassins+Creed+Shadows" alt="Assassin’s Creed Shadows">
+                    <div class="feature-info">
+                        <h5>Assassin’s Creed Shadows</h5>
+                        <p class="price">₹4,899</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Fatal+Fury+City+of+the+Wolves" alt="Fatal Fury: City of the Wolves">
+                    <div class="feature-info">
+                        <h5>Fatal Fury: City of the Wolves</h5>
+                        <p class="price">₹3,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=South+of+Midnight" alt="South of Midnight">
+                    <div class="feature-info">
+                        <h5>South of Midnight</h5>
+                        <p class="price">₹4,499</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Clair+Obscur+Expedition+33" alt="Clair Obscur: Expedition 33">
+                    <div class="feature-info">
+                        <h5>Clair Obscur: Expedition 33</h5>
+                        <p class="price">₹4,499</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Pokemon+Legends+Z-A" alt="Pokemon Legends: Z-A">
+                    <div class="feature-info">
+                        <h5>Pokemon Legends: Z-A</h5>
+                        <p class="price">₹4,999</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Avowed" alt="Avowed">
+                    <div class="feature-info">
+                        <h5>Avowed</h5>
+                        <p class="price">₹5,499</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://placehold.co/220x271?text=Hollow+Knight+Silksong" alt="Hollow Knight: Silksong">
+                    <div class="feature-info">
+                        <h5>Hollow Knight: Silksong</h5>
+                        <p class="price">₹3,499</p>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4">Game News</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="game-news">
+
+                    <!-- News 1 -->
+
+                    <div class="col">
+                        <div class="card bg-card h-100">
+                            <img src="./assets/images/games/marathon.png" class="card-img-top" alt="Marathon">
+                            <div class="card-body">
+                                <h5 class="card-title text-accent">Marathon Release Date Announced</h5>
+                                <p class="card-text">Bungie’s team-based shooter *Marathon* launches September 23, 2025, on PS5, Xbox, and PC. Check out the new gameplay trailer!</p>
+                                <a href="#" class="btn btn-add-cart">Read More</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <small>Posted: April 13, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-card h-100">
+                            <img src="./assets/images/games/gran.jpg" class="card-img-top" alt="Gran Turismo 7">
+                            <div class="card-body">
+                                <h5 class="card-title text-accent">Gran Turismo 7 Patch 1.58 Out Now</h5>
+                                <p class="card-text">The latest update fixes force feedback issues for steering wheels in Sport Mode, plus a new Online Time Trial for credits.</p>
+                                <a href="game-details.html?id=gran-turismo-7" class="btn btn-add-cart">Read More</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <small>Posted: April 15, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-card h-100">
+                            <img src="./assets/images/games/Assassins-Creed-Shadows.jpg" class="card-img-top" alt="Assassin’s Creed Shadows">
+                            <div class="card-body">
+                                <h5 class="card-title text-accent">Assassin’s Creed Shadows Patch 1.0.3</h5>
+                                <p class="card-text">Ubisoft releases patch 1.0.3, improving PS5 Pro graphics and reverting item changes for a smoother feudal Japan experience.</p>
+                                <a href="game-details.html?id=assassins-creed-shadows" class="btn btn-add-cart">Read More</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <small>Posted: April 16, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+              
+    </main>
+
+
+    <footer class="footer bg-footer text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About GameZone -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-accent mb-3">GameZone</h5>
+                    <p class="text-muted">Your ultimate destination for the latest games, news, and community. Explore epic adventures and join the gaming revolution!</p>
+                    
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-accent mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted footer-link">Home</a></li>
+                        <li><a href="#" class="text-muted footer-link">Games</a></li>
+                        <li><a href="#" class="text-muted footer-link">Game News</a></li>
+                        <li><a href="#" class="text-muted footer-link">Contact</a></li>
+                        <li><a href="#" class="text-muted footer-link">Cart</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-accent mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:support@gamezone.com" class="text-muted footer-link"><i class="fas fa-envelope me-2"></i>support@gamezone.com</a></li>
+                        <li><a href="#" class="text-muted footer-link"><i class="fas fa-headset me-2"></i>Support Center</a></li>
+                        <li><span class="text-muted"><i class="fas fa-phone me-2"></i>+91-9123456677</span></li>
+                    </ul>
+                </div>
+                <!-- Stay Connected -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-accent mb-3">Stay Connected</h5>
+                   
+                    <div class="social-links">
+                        <a href="https://x.com" target="_blank" class="text-muted me-3"><i class="fab fa-x-twitter fa-lg"></i></a>
+                        <a href="https://discord.gg" target="_blank" class="text-muted me-3"><i class="fab fa-discord fa-lg"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="text-muted"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-muted">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="text-muted mb-0">&copy; 2025 GameZone. All rights reserved.</p>
+                    <p class="text-muted mb-0">
+                        <a href="#" class="text-muted footer-link">Privacy Policy</a> | 
+                        <a href="#" class="text-muted footer-link">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
