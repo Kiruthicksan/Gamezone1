@@ -293,8 +293,6 @@ main {
 
 /* Contact page styles */
 
-
-/* Contact Page */
 /* Contact Page Styles */
 .contact-container {
     display: flex;
@@ -375,7 +373,44 @@ main {
     transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
+
+
+
+
+
+
+
+
+
+
+/* Responsive  */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+    .hero-section .hero-text {
+        position: static;
+        max-width: 100%;
+        padding: 20px 10px;
+        margin-top: 10px;
+    }
+    .hero-section .status,
+    .hero-section .desc,
+    .hero-section .price {
+        font-size: 14px;
+    }
+    .buy, .wishlist {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .footer .col-md-3 {
+        text-align: center;
+    }
+    .footer .social-links {
+        justify-content: center;
+    }
     .contact-card {
         padding: 1.5rem;
         max-width: 90%;
@@ -389,3 +424,4 @@ main {
         font-size: 0.9rem;
     }
 }
+
