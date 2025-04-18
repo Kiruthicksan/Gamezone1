@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
+
 <body class="bg-dark-custom text-white">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top px-4">
@@ -23,7 +25,7 @@
                         <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="#" class="nav-link">Games</a>
+                        <a href="games.html" class="nav-link">Games</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -35,7 +37,8 @@
                 <div class="d-flex align-items-center gap-3">
                     <div class="search-bar position-relative">
                         <i class="fa fa-search position-absolute ms-1 text-secondary"></i>
-                        <input type="search" class="form-control ps-5 bg-dark text-white border-0" placeholder="Search Games">
+                        <input type="search" class="form-control ps-5 bg-dark text-white border-0"
+                            placeholder="Search Games">
                     </div>
                     <button class="btn btn-neon" onclick="window.location.href = 'login.html'">Login</button>
                 </div>
@@ -46,10 +49,13 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-section">
-            <img src="./assets/images/games/Assassins-Creed-Shadows.jpg" alt="Assassin's Creed Shadows" class="img img-fluid" loading="lazy" >
+            <img src="./assets/images/games/Assassins-Creed-Shadows.jpg" alt="Assassin's Creed Shadows"
+                class="img img-fluid" loading="lazy">
             <div class="hero-text">
                 <p class="status">Available Now</p>
-                <p class="desc">Experience an epic action-adventure story set in feudal Japan! Become a lethal shinobi assassin and powerful legendary samurai as you explore a beautiful open world in a time of chaos.</p>
+                <p class="desc">Experience an epic action-adventure story set in feudal Japan! Become a lethal shinobi
+                    assassin and powerful legendary samurai as you explore a beautiful open world in a time of chaos.
+                </p>
                 <p class="price">₹ 4899</p>
                 <button class="buy">Buy Now</button>
                 <button class="wishlist">Add to Wishlist</button>
@@ -180,7 +186,8 @@
                     </div>
                 </div>
                 <div class="game-card">
-                    <img src="./assets/images/games/Fatal_Fury_City_of_the_Wolves.jpg" alt="Fatal Fury: City of the Wolves">
+                    <img src="./assets/images/games/Fatal_Fury_City_of_the_Wolves.jpg"
+                        alt="Fatal Fury: City of the Wolves">
                     <div class="feature-info">
                         <h5>Fatal Fury: City of the Wolves</h5>
                         <p class="price">₹3,999</p>
@@ -196,18 +203,33 @@
                     </div>
                 </div>
                 <div class="game-card">
-                    <img src="./assets/images/games/Clair_Obscur,_Expedition_33_Cover_1.webp.png" alt="Clair Obscur: Expedition 33">
+                    <img src="./assets/images/games/Clair_Obscur,_Expedition_33_Cover_1.webp.png"
+                        alt="Clair Obscur: Expedition 33">
                     <div class="feature-info">
                         <h5>Clair Obscur: Expedition 33</h5>
                         <p class="price">₹4,499</p>
                         <button class="btn-add-cart">Add to Cart</button>
                     </div>
                 </div>
-                
-               
-                
+
+
+
             </div>
         </section>
+
+        <!-- Add to Cart Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-light border-0 rounded-3">
+                    <div class="modal-body text-center py-4">
+                        <h5 class="modal-title mb-2" id="cartModalLabel">🛒 Game added to cart suceessfully</h5>
+                        <button type="button" class="btn btn-outline-light btn-sm mt-3 px-4"
+                            data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <section class="feature-section py-5">
             <div class="container">
@@ -221,7 +243,8 @@
                             <img src="./assets/images/games/marathon.png" class="card-img-top" alt="Marathon">
                             <div class="card-body">
                                 <h5 class="card-title text-accent">Marathon Release Date Announced</h5>
-                                <p class="card-text">Bungie’s team-based shooter *Marathon* launches September 23, 2025, on PS5, Xbox, and PC. Check out the new gameplay trailer!</p>
+                                <p class="card-text">Bungie’s team-based shooter *Marathon* launches September 23, 2025,
+                                    on PS5, Xbox, and PC. Check out the new gameplay trailer!</p>
                                 <a href="#" class="btn btn-add-cart">Read More</a>
                             </div>
                             <div class="card-footer text-muted">
@@ -235,7 +258,8 @@
                             <img src="./assets/images/games/gran.jpg" class="card-img-top" alt="Gran Turismo 7">
                             <div class="card-body">
                                 <h5 class="card-title text-accent">Gran Turismo 7 Patch 1.58 Out Now</h5>
-                                <p class="card-text">The latest update fixes force feedback issues for steering wheels in Sport Mode, plus a new Online Time Trial for credits.</p>
+                                <p class="card-text">The latest update fixes force feedback issues for steering wheels
+                                    in Sport Mode, plus a new Online Time Trial for credits.</p>
                                 <a href="game-details.html?id=gran-turismo-7" class="btn btn-add-cart">Read More</a>
                             </div>
                             <div class="card-footer text-muted">
@@ -245,24 +269,27 @@
                     </div>
                     <div class="col">
                         <div class="card bg-card h-100">
-                            <img src="./assets/images/games/Assassins-Creed-Shadows.jpg" class="card-img-top" alt="Assassin’s Creed Shadows">
+                            <img src="./assets/images/games/Assassins-Creed-Shadows.jpg" class="card-img-top"
+                                alt="Assassin’s Creed Shadows">
                             <div class="card-body">
                                 <h5 class="card-title text-accent">Assassin’s Creed Shadows Patch 1.0.3</h5>
-                                <p class="card-text">Ubisoft releases patch 1.0.3, improving PS5 Pro graphics and reverting item changes for a smoother feudal Japan experience.</p>
-                                <a href="game-details.html?id=assassins-creed-shadows" class="btn btn-add-cart">Read More</a>
+                                <p class="card-text">Ubisoft releases patch 1.0.3, improving PS5 Pro graphics and
+                                    reverting item changes for a smoother feudal Japan experience.</p>
+                                <a href="game-details.html?id=assassins-creed-shadows" class="btn btn-add-cart">Read
+                                    More</a>
                             </div>
                             <div class="card-footer text-muted">
                                 <small>Posted: April 16, 2025</small>
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
 
-       
-              
+
+
     </main>
 
 
@@ -272,8 +299,9 @@
                 <!-- About GameZone -->
                 <div class="col-md-3 mb-4">
                     <h5 class="text-accent mb-3">GameZone</h5>
-                    <p class="text-muted">Your ultimate destination for the latest games, news, and community. Explore epic adventures and join the gaming revolution!</p>
-                    
+                    <p class="text-muted">Your ultimate destination for the latest games, news, and community. Explore
+                        epic adventures and join the gaming revolution!</p>
+
                 </div>
 
                 <!-- Quick Links -->
@@ -291,19 +319,24 @@
                 <div class="col-md-3 mb-4">
                     <h5 class="text-accent mb-3">Contact Us</h5>
                     <ul class="list-unstyled">
-                        <li><a href="mailto:support@gamezone.com" class="text-muted footer-link"><i class="fas fa-envelope me-2"></i>support@gamezone.com</a></li>
-                        <li><a href="#" class="text-muted footer-link"><i class="fas fa-headset me-2"></i>Support Center</a></li>
+                        <li><a href="mailto:support@gamezone.com" class="text-muted footer-link"><i
+                                    class="fas fa-envelope me-2"></i>support@gamezone.com</a></li>
+                        <li><a href="#" class="text-muted footer-link"><i class="fas fa-headset me-2"></i>Support
+                                Center</a></li>
                         <li><span class="text-muted"><i class="fas fa-phone me-2"></i>+91-9123456677</span></li>
                     </ul>
                 </div>
                 <!-- Stay Connected -->
                 <div class="col-md-3 mb-4">
                     <h5 class="text-accent mb-3">Stay Connected</h5>
-                   
+
                     <div class="social-links">
-                        <a href="https://x.com" target="_blank" class="text-muted me-3"><i class="fab fa-x-twitter fa-lg"></i></a>
-                        <a href="https://discord.gg" target="_blank" class="text-muted me-3"><i class="fab fa-discord fa-lg"></i></a>
-                        <a href="https://youtube.com" target="_blank" class="text-muted"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="https://x.com" target="_blank" class="text-muted me-3"><i
+                                class="fab fa-x-twitter fa-lg"></i></a>
+                        <a href="https://discord.gg" target="_blank" class="text-muted me-3"><i
+                                class="fab fa-discord fa-lg"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="text-muted"><i
+                                class="fab fa-youtube fa-lg"></i></a>
                     </div>
                 </div>
             </div>
@@ -312,7 +345,7 @@
                 <div class="col text-center">
                     <p class="text-muted mb-0">&copy; 2025 GameZone. All rights reserved.</p>
                     <p class="text-muted mb-0">
-                        <a href="#" class="text-muted footer-link">Privacy Policy</a> | 
+                        <a href="#" class="text-muted footer-link">Privacy Policy</a> |
                         <a href="#" class="text-muted footer-link">Terms of Service</a>
                     </p>
                 </div>
@@ -325,4 +358,5 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Gamezone </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body class="bg-dark-custom">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top px-4">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fw-bold text-accent ">GameZone</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="games.html" class="nav-link">Games</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cart <span class="badge bg-danger">0</span></a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="search-bar position-relative">
+                        <i class="fa fa-search position-absolute ms-1 text-secondary"></i>
+                        <input type="search" class="form-control ps-5 bg-dark text-white border-0" placeholder="Search Games">
+                    </div>
+                    <button class="btn btn-neon" onclick="window.location.href = 'login.html'">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <main class="contact-container">
         <div class="contact-card">
           <h2 class="contact-title">Contact GameZone</h2>

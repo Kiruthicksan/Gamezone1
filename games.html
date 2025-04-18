@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - GameZone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body class="bg-dark-custom">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top px-4">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fw-bold text-accent ">GameZone</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="games.html" class="nav-link">Games</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cart <span class="badge bg-danger">0</span></a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="search-bar position-relative">
+                        <i class="fa fa-search position-absolute ms-1 text-secondary"></i>
+                        <input type="search" class="form-control ps-5 bg-dark text-white border-0" placeholder="Search Games">
+                    </div>
+                    <button class="btn btn-neon" onclick="window.location.href = 'login.html'">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="all-games-section">
+        <h2 class="section-title">Games</h2>
+        <div class="all-games-grid">
+          
+          <div class="game-card">
+            <img src="./assets/images/games/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077">
+            <div class="feature-info">
+              <h5>Cyberpunk 2077</h5>
+              <p class="price">₹2,999</p>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="game-card">
+            <img src="./assets/images/games/gow.jpg" alt="God of War: Ragnarök">
+            <div class="feature-info">
+                <h5>God of War: Ragnarök</h5>
+                <p class="price">₹4,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/lastofus.jpg" alt="The Last of Us Part II">
+            <div class="feature-info">
+                <h5>The Last of Us Part II</h5>
+                <p class="price">₹4,299</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2">
+            <div class="feature-info">
+                <h5>Red Dead Redemption 2</h5>
+                <p class="price">₹4,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/Ghost_of_Tsushima.jpg" alt="Ghost of Tsushima">
+            <div class="feature-info">
+                <h5>Ghost of Tsushima</h5>
+                <p class="price">₹4,899</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/SpiderMan2.jpeg" alt="Spider-Man 2">
+            <div class="feature-info">
+                <h5>Spider-Man 2</h5>
+                <p class="price">₹3,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/Detroit_Become_Human.jpg" alt="Detroit: Become Human">
+            <div class="feature-info">
+                <h5>Detroit: Become Human</h5>
+                <p class="price">₹3,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/Beyond_Two_Souls_final_cover.jpg" alt="Beyond: Two Souls">
+            <div class="feature-info">
+                <h5>Beyond: Two Souls</h5>
+                <p class="price">₹3,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="/assets/images/games/Resident_Evil_4_remake_cover_art.jpg" alt="Resident Evil 4">
+            <div class="feature-info">
+                <h5>Resident Evil 4</h5>
+                <p class="price">₹3,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="./assets/images/games/Black_Myth_Wukong_cover_art.jpg" alt="Black Myth: Wukong">
+            <div class="feature-info">
+                <h5>Black Myth: Wukong</h5>
+                <p class="price">₹3,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="./assets/images/games/Grand_Theft_Auto_VI.png" alt="Grand Theft Auto VI">
+            <div class="feature-info">
+                <h5>Grand Theft Auto VI</h5>
+                <p class="price">₹5,999*</p>
+                <button class="btn-add-cart">Coming Soon</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/Metroid_Prime_4_Beyond_cover_art.png" alt="Metroid Prime 4: Beyond">
+            <div class="feature-info">
+                <h5>Metroid Prime 4: Beyond</h5>
+                <p class="price">₹4,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/Monster_Hunter_Wilds_cover.png">
+            <div class="feature-info">
+                <h5>Monster Hunter Wilds</h5>
+                <p class="price">₹5,499</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="assets/images/games/Assassins-Creed-Shadows.jpg" alt="Assassin’s Creed Shadows">
+            <div class="feature-info">
+                <h5>Assassin’s Creed Shadows</h5>
+                <p class="price">₹4,899</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/Fatal_Fury_City_of_the_Wolves.jpg" alt="Fatal Fury: City of the Wolves">
+            <div class="feature-info">
+                <h5>Fatal Fury: City of the Wolves</h5>
+                <p class="price">₹3,999</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="./assets/images/games/South_of_Midnight_cover_art.jpeg" alt="South of Midnight">
+            <div class="feature-info">
+                <h5>South of Midnight</h5>
+                <p class="price">₹4,499</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+       
+          
+        </div>
+        
+        
+      </section>
+
+      <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0 rounded-3">
+                <div class="modal-body text-center py-4">
+                    <h5 class="modal-title mb-2" id="cartModalLabel">🛒 Game added to cart suceessfully</h5>
+                    <button type="button" class="btn btn-outline-light btn-sm mt-3 px-4"
+                        data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+      
+</body>
+</html>

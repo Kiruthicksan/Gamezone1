@@ -10,3 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+  const cartButtons = document.querySelectorAll('.btn-add-cart');
+  const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+
+  cartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      cartModal.show();
+    });
+  });
+
+
