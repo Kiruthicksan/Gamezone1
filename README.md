@@ -6,7 +6,7 @@
 
 ## 🌐 Live Demo
 
-> _Coming Soon_
+https://kiruthicksan.github.io/Gamezone1/
 
 ---
 
@@ -36,7 +36,7 @@ _Add screenshots to the `screenshots/` folder and update the image links here:_
 
 
 
-📌 Future Improvements
+## 📌 Future Improvements
 User authentication system
 
 Game detail pages
@@ -47,7 +47,9 @@ Backend integration (Node.js + MongoDB)
 
 Game ratings and filters
 
-✍️ Author
+---
+
+## ✍️ Author
 Kiruthicksan B
 
 📧 kiruthicksanboopathi@gmail.com
